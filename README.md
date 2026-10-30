@@ -2,15 +2,13 @@
 Agentic AI assignment regarding an student chatbot for policy handbook
 
 ```markdown
-# 🎓 AIDTM Intelligent Student Support Agent
+🎓 AIDTM Intelligent Student Support Agent
 
 An intelligent, multi-turn ReAct (Reason + Act) agent built for the **Adani Institute of Technology Management (AIDTM)**. The system provides automated institutional support by combining targeted Retrieval-Augmented Generation (RAG) over official policy documents, secure student record lookups, persistent user preference memory, and robust error handling.
 
----
 
-## 📂 Project Structure
+📂 Project Structure
 
-```text
 aidtm-student-support-agent/
 │
 ├── app.py                      # Main Streamlit user interface and application loop
