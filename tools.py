@@ -22,8 +22,11 @@ def check_fee_status(student_id: str) -> dict:
             "status": "error", 
             "message": "Missing required parameter: 'student_id'. Please ask the user for their Student ID (e.g., STU-101)."
         }
-    if not os.path.exists(STUDENT_DB):
+    
+    # Check the actual file path string where student data lives
+    if not os.path.exists("student_data.json"):
         return {"status": "error", "message": "Student database file ('student_data.json') not found."}
+        
     student_id = student_id.upper().strip()
     if student_id in STUDENT_DB:
         return {

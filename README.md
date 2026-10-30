@@ -107,6 +107,15 @@ This will automatically open the web application in your default browser at `htt
 
 ---
 
+## 📊 Tracing & Evaluation
+
+To generate and update your evaluation report:
+
+1. Run the agent application (`app.py`) to execute user interactions and record raw logs.
+2. Run `format_trace.py` in your terminal to compile the trace logs into `agent_evaluation_log.xlsx`.
+
+Each time `format_trace.py` is executed, it parses all accumulated traces from `traces/run_logs.jsonl` and appends/updates the structured Excel log with per-turn token counts, latency, and retrieved evidence.
+
 ## 🧪 Evaluation & Testing Guide
 
 You can evaluate the agent against the assignment requirements using these test prompts:
